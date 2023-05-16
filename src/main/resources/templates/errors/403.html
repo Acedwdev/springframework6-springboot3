@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <title>Access Denied</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div>Access Denied. 
+            You do NOT have permissions to view this page or run this action
+            <a th:href="@{/}" >[[#{action.back}]]</a>
+        </div>
+    </body>
+</html>
